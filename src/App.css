@@ -5,15 +5,22 @@
   text-align: center;
 }
 
+.clickable:hover {
+  cursor: pointer;
+}
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 400px;
+  width: 400px;
   will-change: filter;
   transition: filter 300ms;
 }
+
+.glow:hover,
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +29,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
